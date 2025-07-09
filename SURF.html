@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SURF- Smrithi Krish</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+ <nav class="navbar">
+    <a href="index.html">Smrithi Krish</a>
+    <div class="nav-links">
+      <a href="showcase.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="index.html#contact">Get in Touch</a>
+    </div>
+  </nav>
+
+  <div class="back-button-wrapper slate-bg">
+    <a href="#" onclick="history.back();" class="back-button">← Back</a>
+  </div>
+
+  <section class="project-detail">
+  <!-- PROJECT PAGE TITLE -->
+    <section class="project-page-header">
+      <div class="project-page-text">
+        <h1>Summer Undergraduate Research Fellowship</h1>
+        <p class="project-subtitle">My work as a research assistant in the Infant Language Learning Lab for the summer of 2025.</p>
+      </div>
+    </section>
+
+    <!-- CONTENT BODY -->
+    <section class="project-body">
+      <div class="project-content">
+        <h2>Overview</h2>
+        <p> Over this summer, I worked in the Infant Language Learning Lab (ILLL) on a study using functional Near-Infrared Spectroscopy (fNIRS) to explore learning in comprehension with brain connectivity in children. The project investigates how their brains respond to different forms of media and whether patterns of activation suggest emerging functional connectivity relevant to later cognitive control.</p>
+
+<p>Using fNIRS, we recorded both blood flow and oxygen levels in prefrontal and temporal brain regions while children listened to a video story, interactively read a story with a researcher, or watched an episode of Bluey. I was involved in preparing and running pilot testing sessions, including cap setup, signal quality checking, and ensuring data reliability across sessions in addition to engaging wih the children. </p>
+
+<p>A major focus of my work was in the preprocessing and exploratory analysis of fNIRS data. I performed signal cleaning and PCA (Principal Component Analysis) to reduce dimensionality and identify dominant patterns in channel activity. Our PCA findings revealed that PC1 loadings were symmetrically distributed across the left and right hemispheres**, suggesting bilateral engagement, while PC2 was driven by more right-lateralized channels. These patterns may reflect early functional specialization and could potentially relate to connectivity profiles linked to executive attention.</p>
+
+<p>We are currently using these PCA results to guide future connectivity analyses and to refine our hypotheses about regional interactions during early language and cognitive development. This summer laid the groundwork for full-scale data collection and analysis planned for the academic year.</p>
+
+</p>
+
+        <h2>Tools Used</h2>
+        <ul>
+          <li>R</li>
+          <li>ggplot2</li>
+        </ul>
+
+        <h2>Visualizations</h2>
+            <div class="project-images">
+              <img src="images/pc1 loadings.png" alt="Activation plot for infant response" />
+              <img src="images/pc1 scatter.png" alt="Channel-wise signal intensity by condition" />
+            </div>
+
+
+        <h2>Reflection</h2>
+        <p>Discuss what you learned, what you’d do differently, or why this project was meaningful.</p>
+      </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <footer id="contact" class="contact">
+    <section class="contact">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>
+            Interested in data science opportunities focused on public health and social impact. 
+            Whether it’s research, internships, or collaborations, feel free to reach out!
+          </p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/xjkrqqrv" method="POST">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required />
+
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required />
+
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/smrithikrish" target="_blank">LinkedIn</a>
+      <a href="https://github.com/smrithikrish" target="_blank" >GitHub</a>
+      <a href="#" class="back-to-top">↑ Back to Top</a>
+    </div>
+
+    </section>
+  </footer>
+
+  <script>
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted || window.performance?.navigation?.type === 2) {
+      const form = document.getElementById("contact-form");
+      if (form) {
+        form.reset();
+      }
+    }
+  });
+  </script>
+</body>
+
+</html>
+

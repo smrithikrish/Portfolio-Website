@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smrithi Krish</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&display=swap" rel="stylesheet" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html">Smrithi Krish</a>
+    <div class="nav-links">
+      <a href="showcase.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="index.html#contact">Get in Touch</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="fade-up">Smrithi Krish</h1>
+        <p class="fade-up delay blurb">Statistics + Machine Learning @ CMU | Researcher | Data Storyteller</p>
+      </div>
+
+      <img src="images/oneLine.png" alt="Smrithi smiling" class="fade-in-img" />
+    </div>
+  </section>
+
+
+  <!-- ABOUT ME -->
+  <section class="about">
+  <img src="images/me.png" alt="Photo of Smrithi" />
+
+  <div class="about-text">
+    <h2>Who is Smrithi?</h2>
+
+    <p>Smrithi is a Statistics and Machine Learning student at Carnegie Mellon University, passionate about using data for public health and social impact.</p>
+
+    <p>She’s worked on projects ranging from child brain development to healthcare access in Allegheny County, with a growing interest in how data science can advance equity in real-world systems.</p>
+
+    <p>Smrithi has experience with R, SQL, C, and Python- as well as an interest in casual inference and experiment design. She enjoys working with messy datasets, using visualization tools and statistical modeling techniques to uncover patterns that matter.</p>
+
+    <a class="button" href="#contact">Get in Touch</a>
+  </div>
+</section>
+
+<!-- PROJECT PREVIEW SECTION -->
+  <section id="projects" class="projects-preview">
+    <h2>Selected Work</h2>
+    <div class="projects-grid">
+      <a href="SURF.html" class="project-card">
+        <img src="images/SURF.jpg" alt="Project preview" />
+        <div class="project-info">
+          <h3>Summer Undergraduate Research Fellowship</h3>
+          <p>My work as a research assistant in the Infant Language Learning Lab for the summer of 2025</p>
+        </div>
+      </a>
+      <a href="ACPHD.html" class="project-card">
+        <img src="images/ACPHD.jpg" alt="Project preview" />
+        <div class="project-info">
+          <h3>ACHD x CMU Statistics Department</h3>
+          <p>Research project on mapping healthcare access in Allegheny County</p>
+        </div>
+      </a>
+      <a href="315.html" class="project-card">
+        <img src="images/OD.jpg" alt="Project preview" />
+        <div class="project-info">
+          <h3>36-315: Final Project</h3>
+          <p>Group project on real data collected from @ocean.destinations</p>
+        </div>
+      </a>
+    </div>
+    <a class="see-more" href="showcase.html">See More →</a>
+  </section>
+
+
+  <!-- CONTACT SECTION -->
+  <footer id="contact" class="contact">
+    <section class="contact">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>
+            Interested in data science opportunities focused on public health and social impact. 
+            Whether it’s research, internships, or collaborations, feel free to reach out!
+          </p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/xjkrqqrv" method="POST">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required />
+
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required />
+
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/smrithikrish" target="_blank">LinkedIn</a>
+      <a href="https://github.com/smrithikrish" target="_blank" >GitHub</a>
+      <a href="#" class="back-to-top">↑ Back to Top</a>
+    </div>
+
+    <p>&copy; 2025 Smrithi Krishnaswamy</p>
+
+    </section>
+  </footer>
+
+
+  <script>
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted || window.performance?.navigation?.type === 2) {
+      const form = document.getElementById("contact-form");
+      if (form) {
+        form.reset();
+      }
+    }
+  });
+  </script>
+</body>
+
+</html>

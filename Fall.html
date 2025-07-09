@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fall Capstone - Smrithi Krish</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Smrithi Krish</a>
+    <div class="nav-links">
+      <a href="showcase.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="index.html#contact">Get in Touch</a>
+    </div>
+  </nav>
+
+  <div class="back-button-wrapper slate-bg">
+    <a href="#" onclick="history.back();" class="back-button">← Back</a>
+  </div>
+
+  <section class="project-detail">
+  <!-- PROJECT PAGE TITLE -->
+    <section class="project-page-header">
+      <div class="project-page-text">
+        <h1>Undergraduate Research Capstone</h1>
+        <p class="project-subtitle">Upcoming project for Fall 2025.</p>
+      </div>
+    </section>
+
+    <!-- CONTENT BODY -->
+    <section class="project-body">
+      <div class="project-content">
+        <h2>Overview</h2>
+        <p>More information to come! I am so excited to share this with you all.</p>
+
+        <h2>Tools Used</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <h2>Reflections / Takeaways</h2>
+        <p></p>
+      </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <footer id="contact" class="contact">
+    <section class="contact">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>
+            Interested in data science opportunities focused on public health and social impact. 
+            Whether it’s research, internships, or collaborations, feel free to reach out!
+          </p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/xjkrqqrv" method="POST">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required />
+
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required />
+
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/smrithikrish" target="_blank">LinkedIn</a>
+      <a href="https://github.com/smrithikrish" target="_blank" >GitHub</a>
+      <a href="#" class="back-to-top">↑ Back to Top</a>
+    </div>
+
+    </section>
+  </footer>
+
+  <script>
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted || window.performance?.navigation?.type === 2) {
+      const form = document.getElementById("contact-form");
+      if (form) {
+        form.reset();
+      }
+    }
+  });
+  </script>
+</body>
+
+</html>
