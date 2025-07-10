@@ -308,7 +308,7 @@ img.fade-in-img {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
 }
 
 .projects-page {
@@ -657,7 +657,6 @@ a.back-to-top:hover {
 .resume-main ul li {
   margin-bottom: 0.5rem;
 }
-<<<<<<< HEAD
 
 .button.live-btn {
   background-color: var(--slate);  /* or pick a different variable */
@@ -675,5 +674,3 @@ a.back-to-top:hover {
   color: var(--light);
 }
 
-=======
->>>>>>> 5075d5e3a211105487e9d60228e514b56257fd34
