@@ -13,9 +13,12 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, .section-title {
@@ -578,7 +581,19 @@ a.back-to-top:hover {
     width: 100%;
     text-align: center;
   }
+  .hero h1 {
+    font-size: 3rem; /* or adjust to 2.5rem if still too big */
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 }
+
+}
+
 
 /* ===== Resume Page ===== */
 .resume-header {
