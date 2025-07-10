@@ -251,13 +251,64 @@ img.fade-in-img {
   color: var(--light);
   margin-left: 1.5rem;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .navbar a:hover {
   color: var(--bluegray); /* or another accent color */
   transition: color 0.3s ease;
 }
+
+/* existing navbar styles stay the same */
+
+/* Hide toggle button on large screens */
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--light);
+  cursor: pointer;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  /* Show toggle button */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Hide nav links by default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: var(--dark);
+    position: absolute;
+    top: 60px; /* height of navbar approx */
+    right: 0;
+    left: 0;
+    padding: 1rem 2rem;
+  }
+
+  /* Show nav links when active */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Style nav links for column */
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+
+  /* Adjust navbar layout for small screens */
+  .navbar {
+    position: relative;
+    flex-wrap: wrap;
+  }
+}
+
+
+
 
 .brand-name {
   font-family: 'Fredericka the Great', cursive;
@@ -396,9 +447,13 @@ img.fade-in-img {
 }
 
 .about img {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 50%;
+  height: auto;
+  flex-shrink: 0;
 }
+
 
 .about-text {
   flex: 1;
@@ -434,6 +489,23 @@ img.fade-in-img {
   background-color: var(--light);
   color: var(--navy);
 }
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    max-width: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+}
+
 
 /* CONTACT */
 .contact {
@@ -582,17 +654,106 @@ a.back-to-top:hover {
     text-align: center;
   }
   .hero h1 {
-    font-size: 3rem; /* or adjust to 2.5rem if still too big */
+    font-size: 6rem; /* or adjust to 2.5rem if still too big */
     text-align: center;
   }
 
   .hero p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
 
+/* Animation Classes (match your main page) */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.delay {
+  animation-delay: 0.4s;
+}
+
+.fade-in-img {
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+/* Base Layout */
+.project-hero {
+  padding: 4rem 2rem;
+}
+
+.project-hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.project-hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.project-hero img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive Adjustments (matching your 1050px breakpoint) */
+@media (max-width: 1050px) {
+  .project-hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .project-hero-text {
+    max-width: 100%;
+  }
+  
+  .project-hero h1 {
+    font-size: 3rem;
+  }
+  
+  .project-hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .project-hero img {
+    max-width: 80%;
+    margin-top: 1rem;
+  }
+}
+
+/* Smaller mobile adjustments */
+@media (max-width: 600px) {
+  .project-hero h1 {
+    font-size: 4rem;
+  }
+  
+  .project-hero p {
+    font-size: 1rem;
+  }
+  
+  .project-hero img {
+    max-width: 100%;
+  }
+}
+
 
 
 /* ===== Resume Page ===== */
