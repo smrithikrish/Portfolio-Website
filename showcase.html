@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Smrithi Krish</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Smrithi Krish</a>
+    <div class="nav-links">
+      <a href="showcase.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="#contact">Get in Touch</a>
+    </div>
+  </nav>
+  
+  <section class="project-hero">
+    <div class="project-hero-content">
+      <div class="project-hero-text">
+        <h1 class="fade-up">Showcase</h1>
+        <p class="fade-up delay">
+          Explore my personal, research, and educational projects — a collection of my data science journey and impact-driven work.
+        </p>
+      </div>
+
+      <img src="images/leaf.png" alt="Smrithi smiling" class="fade-in-img" />
+    </div>
+  </section>
+
+
+
+  <main class="projects-page">
+    
+    <section class="projects-gallery">
+      <div class="projects-grid">
+      <a href="Fall.html" class="project-card">
+        <img src="images/Fall.jpg" alt="Project preview" />
+        <div class="project-info">
+          <h3>Upcoming: Undergraduate Research Capstone</h3>
+          <p>Research opportunity for Fall 2025</p>
+        </div>
+      </a>
+      <a href="SURF.html" class="project-card">
+        <img src="images/SURF.jpg" alt="Project preview" />
+        <div class="project-info">
+          <h3>Summer Undergraduate Research Fellowship</h3>
+          <p>My work as a research assistant in the Infant Language Learning Lab for the summer of 2025</p>
+        </div>
+      </a>
+      <a href="ILLL.html" class="project-card">
+        <img src="images/ILLL.png" alt="Project preview" />
+        <div class="project-info">
+          <h3>Infant Language Learning Lab</h3>
+          <p>My work in the CMU Psychology Department during the academic year</p>
+        </div>
+      </a>
+      <a href="ACPHD.html" class="project-card">
+        <img src="images/ACPHD.jpg" alt="Project preview" />
+        <div class="project-info">
+          <h3>ACHD x CMU Statistics Department</h3>
+          <p>Research project on mapping healthcare access in Allegheny County</p>
+        </div>
+      </a>
+      <a href="personal.html" class="project-card">
+        <img src="images/coco.png" alt="Project preview" />
+        <div class="project-info">
+          <h3>Personal Projects</h3>
+          <p>My own pursuits ranging from this very website to my art!</p>
+        </div>
+      </a>
+      <a href="315.html" class="project-card">
+        <img src="images/OD.jpg" alt="Project preview" />
+        <div class="project-info">
+          <h3>36-315: Final Project</h3>
+          <p>Group project on real data collected from @ocean.destinations</p>
+        </div>
+      </a>
+      <a href="112.html" class="project-card">
+        <img src="images/15112.jpg" alt="Project preview" />
+        <div class="project-info">
+          <h3>15-112: Midterm Project</h3>
+          <p>Project building the game Superset using CMU CS Academy graphics package</p>
+        </div>
+      </a>
+      <a href="bike.html" class="project-card">
+        <img src="images/BikePGH.jpg" alt="Project preview" />
+        <div class="project-info">
+          <h3>BikePGH x SUDS</h3>
+          <p>Group project through the collaboration of Students Using Data for Social Good and BikePGH</p>
+        </div>
+      </a>
+      <a href="cmr.html" class="project-card">
+        <img src="images/CMR.png" alt="Project preview" />
+        <div class="project-info">
+          <h3>Carnegie Mellon Racing</h3>
+          <p>My contributions to CMU's FSAE racing team</p>
+        </div>
+      </a>
+    <!-- Repeat for each project -->
+  </div>
+</section>
+
+
+  </main>
+
+   <!-- CONTACT SECTION -->
+  <footer id="contact" class="contact">
+    <section class="contact">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>
+            Interested in data science opportunities focused on public health and social impact. 
+            Whether it’s research, internships, or collaborations, feel free to reach out!
+          </p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/xjkrqqrv" method="POST">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required />
+
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required />
+
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/smrithikrish" target="_blank">LinkedIn</a>
+      <a href="https://github.com/smrithikrish" target="_blank" >GitHub</a>
+      <a href="#" class="back-to-top">↑ Back to Top</a>
+    </div>
+
+    <p>&copy; 2025 Smrithi Krishnaswamy</p>
+
+    </section>
+  </footer>
+
+
+  <script>
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted || window.performance?.navigation?.type === 2) {
+      const form = document.getElementById("contact-form");
+      if (form) {
+        form.reset();
+      }
+    }
+  });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infant Language Learning Lab - Smrithi Krish</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Smrithi Krish</a>
+    <div class="nav-links">
+      <a href="showcase.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="#contact">Get in Touch</a>
+    </div>
+  </nav>
+
+  <div class="back-button-wrapper slate-bg">
+    <a href="#" onclick="history.back();" class="back-button">← Back</a>
+  </div>
+
+  <section class="project-detail">
+  <!-- PROJECT PAGE TITLE -->
+    <section class="project-page-header">
+      <div class="project-page-text">
+        <h1>Infant Language Learning Lab</h1>
+        <p class="project-subtitle">My work as an undergraduate research assistant in the CMU Psychology Department.</p>
+      </div>
+    </section>
+
+    <!-- CONTENT BODY -->
+    <section class="project-body">
+      <div class="project-content">
+        <h2>Overview</h2>
+        <p>As part of a study on metacognition and hypercorrection, I supported research on how children can measure their own confidence in their answers as well as using feedback to learn. The project centers on testing whether children can learn how to solve small puzzles—such as pattern matching— and be able to accurately rate their confidence on 4-point scale. Their confidence level allows us to study the effect of hypercorrection (if they were really sure about a wrong answer, they are more likely to remember the correct answer when told). The metacognition piece comes into play as we see whether the children are accurately reflecting their own abilities. Are they consistently overconfident? The study is still ongoing, so I am excited to share our findings as we move to data analysis.</p>
+        <p>I was involved in running participants using Gorilla, which presents a visual puzzle and measures children’ looking times and answers. I also helped pilot task variations and refine the experimental protocol to ensure clarity and engagement for children aged 4-8 years. On the backend, I contributed to cleaning and organizing behavioral data using R, preparing it for statistical analysis. I also assisted in refining stimuli on Gorilla to better target specific relational reasoning skills. This experience gave me hands-on insight into experimental design and deepened my understanding of how abstract cognitive abilities emerge in early development.</p>
+
+        <h2>Tools Used</h2>
+        <ul>
+          <li>R</li>
+          <li>Gorilla</li>
+        </ul>
+
+        <h2> Example Puzzle </h2>
+            <div class="project-images">
+              <img src="images/ILLLTask.png" alt="help screen" />
+            </div>
+
+        <h2>Reflections</h2>
+        <p>I had the opportunity to participate in research because of CMU’s Highway to Undergraduate Research for the Academic Year (HURAY) program. Reflecting on my journey through the HURAY program from Fall 2024 to Spring 2025, I am most proud of how much I’ve grown in my technical skills and also in my confidence as a researcher. When I first joined the program, I had no experience with research. But through the Infant Language Learning Lab, I’ve been able to contribute meaningfully to many, very different research projects. I learned to clean, model, and visualize data in R, and think critically about how to apply statistical methods to real-world problems. I’m proud of how quickly I adapted and how deeply I committed myself to both projects.</p>
+        <p>Participating in research helped me academically by giving me a clear understanding of how the tools I’ve learned in my statistics classes apply to complex questions. Professionally, it strengthened my interest in biostatistics and data science, and personally, it made me more confident in pursuing a research-focused career. One of the most valuable aspects of HURAY was being surrounded by a supportive cohort and mentors who not only believed in me but also challenged me to think more broadly. The relationships I built helped me feel like I truly belong in STEM. I know the skills and mentorship I gained will continue to support me, especially as I apply for summer research programs and begin preparing for graduate school.</p>
+        <p>The supplemental instruction in the second semester pushed me to reflect on my goals more intentionally. My informational interview with Professor Zach Branson had a lasting impact. I admired his work in causal inference and how he balances theory with real-world application. Our conversation clarified for me that I want to pursue a path that blends statistical rigor with impact-driven research, possibly within public health or education. It also helped me visualize what a career in academia or research-focused industry could look like. Meanwhile, the HURAY Hangouts gave me the space to talk with peers facing similar questions about their futures, which helped normalize the uncertainty I sometimes feel.</p>
+        <p>Throughout my sophomore year, my goals have become more focused. While I used to think I might just apply my statistics major to a general data science role, I now feel more committed to using my skills in service of social impact. I'm also more open to the idea of graduate school than I was when I started HURAY. This program gave me a community, a sense of direction, and a belief in my ability to contribute something meaningful, and that’s something I’ll carry with me long after the program ends.</p>
+      </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <footer id="contact" class="contact">
+    <section class="contact">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>
+            Interested in data science opportunities focused on public health and social impact. 
+            Whether it’s research, internships, or collaborations, feel free to reach out!
+          </p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/xjkrqqrv" method="POST">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required />
+
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required />
+
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/smrithikrish" target="_blank">LinkedIn</a>
+      <a href="https://github.com/smrithikrish" target="_blank" >GitHub</a>
+      <a href="#" class="back-to-top">↑ Back to Top</a>
+    </div>
+
+    </section>
+  </footer>
+
+  <script>
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted || window.performance?.navigation?.type === 2) {
+      const form = document.getElementById("contact-form");
+      if (form) {
+        form.reset();
+      }
+    }
+  });
+  </script>
+</body>
+
+</html>
+

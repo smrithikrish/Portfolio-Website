@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Superset – Smrithi Krish</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Smrithi Krish</a>
+    <div class="nav-links">
+      <a href="showcase.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="#contact">Get in Touch</a>
+    </div>
+  </nav>
+
+  <div class="back-button-wrapper slate-bg">
+    <a href="#" onclick="history.back();" class="back-button">← Back</a>
+  </div>
+
+  <section class="project-detail">
+  <!-- PROJECT PAGE TITLE -->
+    <section class="project-page-header">
+      <div class="project-page-text">
+        <h1>Superset</h1>
+        <p class="project-subtitle">My midterm project for CMU's 15-112 course
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTENT BODY -->
+    <section class="project-body">
+      <div class="project-content">
+        <h2>Overview</h2>
+        <p>Superset is a visual logic game inspired by the classic card game Set, developed as part of Carnegie Mellon's 15-112 programming course. The game challenges players to identify sets of three cards based on shared or distinct visual features. Each card must contain a set of attributes- I chose emoji type, background image, emoji size, and rotation speed. A valid set is formed when, for each attribute, the values are either all the same or all different.
+        </p>
+        <p>I designed and implemented SuperSet in Python using the CMU Graphics library, creating multiple interactive screens including a start menu, separate theme and dimension selectors, and a gameplay interface. I developed an ocean theme system with custom assets, like aquatic animal emojis, backgrounds, music and sound effects. I also implemented logic to detect valid sets, provide hints with time penalties, and handled dynamic card rendering and user interaction. This project deepened my experience with object-oriented programming, image manipulation, and UI design within a game development context.</p>
+
+        <a href="https://github.com/smrithikrish/Superset.git" target="_blank" class="button live-btn">
+        View Live Project →
+        </a>
+
+        <h2>Tools Used</h2>
+        <ul>
+          <li>Python</li>
+          <li>CMU Graphics Package</li>
+        </ul>
+
+        <h2> Images </h2>
+            <div class="project-images">
+              <img src="images/112help.png" alt="help screen" />
+              <img src="images/112play.png" alt="play screen" />
+            </div>
+      </div>
+  </section>
+
+
+
+  <!-- CONTACT SECTION -->
+  <footer id="contact" class="contact">
+    <section class="contact">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>
+            Interested in data science opportunities focused on public health and social impact. 
+            Whether it’s research, internships, or collaborations, feel free to reach out!
+          </p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/xjkrqqrv" method="POST">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required />
+
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required />
+
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+          <button type="submit" class="button">Send</button>
+        </form>
+      </div>
+
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/smrithikrish" target="_blank">LinkedIn</a>
+      <a href="https://github.com/smrithikrish" target="_blank" >GitHub</a>
+      <a href="#" class="back-to-top">↑ Back to Top</a>
+    </div>
+
+    </section>
+  </footer>
+
+  <script>
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted || window.performance?.navigation?.type === 2) {
+      const form = document.getElementById("contact-form");
+      if (form) {
+        form.reset();
+      }
+    }
+  });
+  </script>
+</body>
+
+</html>
