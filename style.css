@@ -59,6 +59,9 @@ img.fade-in-img {
   transform: translateX(20px);
   animation: fadeInSlide 1.5s ease-out forwards;
   animation-delay: 0.5s;
+
+  box-shadow: none !important;
+  border: none !important;
 }
 
 @keyframes fadeInSlide {
@@ -182,13 +185,15 @@ img.fade-in-img {
 
 .project-page-text h1 {
   font-family: 'Fredericka the Great', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  padding: 0rem 2rem 1rem;
 }
 
 .project-subtitle {
   font-size: 1.3rem;
   color: var(--bluegray);
+  padding: 0rem 2rem;
 }
 
 .project-body {
@@ -307,9 +312,6 @@ img.fade-in-img {
   }
 }
 
-
-
-
 .brand-name {
   font-family: 'Fredericka the Great', cursive;
   font-size: 1.5rem; /* adjust as needed */
@@ -355,7 +357,7 @@ img.fade-in-img {
 .projects-preview h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  padding: 0rem 4rem;
+  padding: 0rem 2rem;
 }
 
 .projects-grid {
@@ -419,7 +421,7 @@ img.fade-in-img {
   display: inline-block;
   width: auto;               
   padding: 0.5rem 1rem; 
-  margin: 2rem 0 0 4rem;
+  margin: 2rem 0 0 3rem;
   margin-top: 2rem;
   color: var(--light);
   font-weight: bold;
@@ -516,7 +518,7 @@ img.fade-in-img {
 
 .contact-wrapper {
   display: flex;
-  justify-content: flex-end; /* aligns form to right side */
+  justify-content: center;
   gap: 4rem;
   max-width: 900px;
   margin: 0 auto;
@@ -687,7 +689,7 @@ a.back-to-top:hover {
 
 /* Base Layout */
 .project-hero {
-  padding: 4rem 2rem;
+  padding: 4rem 4rem;
 }
 
 .project-hero-content {
@@ -761,7 +763,7 @@ a.back-to-top:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 4.2rem;
+  padding: 2rem 3rem;
   border-bottom: 2px solid var(--light);
   color: var(--light);
   background-color: #1B263B;
@@ -769,8 +771,9 @@ a.back-to-top:hover {
 
 .resume-header h1 {
   font-family: 'Fredericka the Great', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0;
+  padding-right: 1rem;
 }
 
 .resume-header .download-btn {
@@ -805,7 +808,7 @@ a.back-to-top:hover {
 
 .resume-main h2 {
   font-family: 'Fredericka the Great', cursive;
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid var(--bluegray);
   padding-bottom: 0.3rem;
@@ -813,7 +816,7 @@ a.back-to-top:hover {
 
 .resume-main h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -887,32 +890,4 @@ a.back-to-top:hover {
   border: none;
 }
 
-.beautiful-gallery {
-  background-color: var(--dark);
-  margin-top: 0;
-  color: var(--light);
-  text-align: center;
-}
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 0 2vw;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--light);
-  border-radius: 6px;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  margin-bottom: 2rem;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
