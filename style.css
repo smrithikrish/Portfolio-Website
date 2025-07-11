@@ -846,6 +846,7 @@ a.back-to-top:hover {
   }
 
   .resume-header .download-btn {
+    margin-top: 1.5rem;
     align-self: stretch;
     width: fit-content;
   }

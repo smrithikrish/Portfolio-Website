@@ -23,7 +23,7 @@
     <a href="#contact">Get in Touch</a>
   </div>
   </nav>
-  
+
   <div class="back-button-wrapper slate-bg">
     <a href="#" onclick="history.back();" class="back-button">← Back</a>
   </div>
@@ -109,6 +109,15 @@
         form.reset();
       }
     }
+  });
+  </script>
+
+  <script>
+  const toggleButton = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
   });
   </script>
 </body>

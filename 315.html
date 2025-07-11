@@ -89,7 +89,7 @@
     </section>
   </footer>
 
-  <script>
+   <script>
   window.addEventListener("pageshow", function (event) {
     if (event.persisted || window.performance?.navigation?.type === 2) {
       const form = document.getElementById("contact-form");
@@ -97,6 +97,15 @@
         form.reset();
       }
     }
+  });
+  </script>
+
+  <script>
+  const toggleButton = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
   });
   </script>
 </body>
