@@ -82,9 +82,9 @@
     <div class="footer-links">
       <a href="https://linkedin.com/in/smrithikrish" target="_blank">LinkedIn</a>
       <a href="https://github.com/smrithikrish" target="_blank" >GitHub</a>
-      <a href="#" class="back-to-top">↑ Back to Top</a>
+      <button class="back-to-top">↑ Back to Top</button>
     </div>
-    
+
   <script>
   window.addEventListener("pageshow", function (event) {
     if (event.persisted || window.performance?.navigation?.type === 2) {
@@ -104,7 +104,15 @@
     navLinks.classList.toggle('active');
   });
   </script>
-    </section>
+
+    <script>
+  document.querySelector('.back-to-top').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  </script>
+  
+  </section>
   </footer>
 </body>
 </html>

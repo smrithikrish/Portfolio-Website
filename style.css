@@ -622,7 +622,7 @@ button.button:hover {
   color: var(--bluegray);
 }
 
-a.back-to-top {
+.back-to-top {
   display: inline-block;
   cursor: pointer;
   background: transparent;
@@ -631,14 +631,22 @@ a.back-to-top {
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: none; /* buttons ignore this, but safe */
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: inherit; /* keep consistent font */
+  font-size: 1rem;
+  /* Remove default button styles */
+  border-style: solid;
+  outline: none;
 }
 
-a.back-to-top:hover {
+.back-to-top:hover,
+.back-to-top:focus {
   background-color: var(--light);
   color: var(--dark);
+  outline: none;
 }
+
 
 @media (max-width: 1050px) {
   .fade-in-img {

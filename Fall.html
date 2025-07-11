@@ -82,7 +82,7 @@
     <div class="footer-links">
       <a href="https://linkedin.com/in/smrithikrish" target="_blank">LinkedIn</a>
       <a href="https://github.com/smrithikrish" target="_blank" >GitHub</a>
-      <a href="#" class="back-to-top">↑ Back to Top</a>
+      <button class="back-to-top">↑ Back to Top</button>
     </div>
 
     </section>
@@ -105,6 +105,13 @@
 
   toggleButton.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+  });
+  </script>
+
+  <script>
+  document.querySelector('.back-to-top').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
   </script>
 </body>
