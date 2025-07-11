@@ -17,9 +17,7 @@
   <nav class="navbar">
   <a href="index.html">Smrithi Krish</a>
 
-  <button class="nav-toggle" aria-label="toggle navigation">
-    ☰
-  </button>
+  <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
 
   <div class="nav-links">
     <a href="showcase.html">Projects</a>
@@ -135,6 +133,15 @@
     }
   });
   </script>
+
+  <script>
+  const toggleButton = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 </body>
 
 </html>

@@ -182,7 +182,7 @@ img.fade-in-img {
 
 .project-page-text h1 {
   font-family: 'Fredericka the Great', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
@@ -654,7 +654,7 @@ a.back-to-top:hover {
     text-align: center;
   }
   .hero h1 {
-    font-size: 6rem; /* or adjust to 2.5rem if still too big */
+    font-size: 5rem; /* or adjust to 2.5rem if still too big */
     text-align: center;
   }
 
@@ -833,6 +833,22 @@ a.back-to-top:hover {
 
 .resume-main ul li {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 750px) {
+  .resume-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-header h1 {
+    font-size: 2rem;
+  }
+
+  .resume-header .download-btn {
+    align-self: stretch;
+    width: fit-content;
+  }
 }
 
 .button.live-btn {
